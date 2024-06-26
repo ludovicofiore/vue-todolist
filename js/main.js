@@ -40,10 +40,12 @@ createApp({
     methods: {
         // funzione per aggiungere task
         addTask() {
-            this.tasks.unshift(this.newTask);
-            console.log(this.tasks);
-            // this.newTask.text = "";
+            // creo oggetto da pushare in array
+            const clonedTask = { ...this.newTask};
             
+            // pusho il nuovo oggetto
+            this.tasks.unshift(clonedTask);
+            console.log(this.tasks);
         },
 
         // funzione per rimuovere task
