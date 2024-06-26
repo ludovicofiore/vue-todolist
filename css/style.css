@@ -38,4 +38,9 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    
+}
+
+.task-done {
+    text-decoration: line-through;
 }

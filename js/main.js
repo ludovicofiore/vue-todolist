@@ -21,7 +21,7 @@ createApp({
                 },
                 {
                     text: "chiamare dentista",
-                    done: false,
+                    done: true,
                 },
                 {
                     text: "buttare la spazzatura",

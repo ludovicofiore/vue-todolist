@@ -22,12 +22,13 @@
 
             <div class="input-container">
                 <input type="text">
-                <button>aggiungi</button>
+                <button>aggiungi task</button>
             </div>
+
+
             <div class="list-container">
                 <ul>
-                    <li class="task">lalal <span class="button"><i class="fa-solid fa-xmark"></i></span></li>
-                    <li class="task">lolo</li>
+                    <li class="task" v-for="(singleTask, index) in tasks" :class="singleTask.done === true ? 'task-done' : ''">{{singleTask.text}}  <span class="remove"><i class="fa-solid fa-xmark"></i></span></li>
                 </ul>
             </div>
         </div>
