@@ -3,3 +3,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#app {
+    padding: 100px 0;
+}
+
+h1 {
+    padding: 20px 0;
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.list-container ul {
+    list-style-type: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
