@@ -44,3 +44,9 @@ h1 {
 .task-done {
     text-decoration: line-through;
 }
+
+.remove:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 50%;
+}
