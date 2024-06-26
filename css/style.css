@@ -24,6 +24,12 @@ h1 {
     text-align: center;
 }
 
+.error {
+    color: red;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
 .list-container {
     width: 80%;
     margin: 0 auto;

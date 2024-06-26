@@ -10,6 +10,9 @@ createApp({
                 done: false
             },
 
+            // creo proprietà per messaggio errore
+            errorMessage: false,
+
             // creo array con tasks
             tasks: [
                 {
@@ -40,11 +43,20 @@ createApp({
     methods: {
         // funzione per aggiungere task
         addTask() {
-            // creo oggetto da pushare in array
-            const clonedTask = { ...this.newTask};
+
+            // condizione di validità input
+            if (this.newTask.text !== "" && this.newTask.text.length >= 4) {
+                // creo oggetto da pushare in array
+                const clonedTask = { ...this.newTask};
+
+                // pusho il nuovo oggetto
+                this.tasks.unshift(clonedTask);
+
+                this.errorMessage = false;
+            } else {
+                this.errorMessage = true;
+            }
             
-            // pusho il nuovo oggetto
-            this.tasks.unshift(clonedTask);
             console.log(this.tasks);
         },
 
