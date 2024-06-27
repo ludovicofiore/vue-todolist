@@ -31,7 +31,10 @@
 
             <div class="list-container">
                 <ul>
-                    <li class="task" v-for="(singleTask, index) in tasks" :key="index" :class="singleTask.done === true ? 'task-done' : ''">{{singleTask.text}}  <span class="remove" @click="removeTask(index)"><i class="fa-solid fa-xmark"></i></span></li>
+                    <li class="task" v-for="(singleTask, index) in tasks" :key="index" :class="singleTask.done === true ? 'task-done' : ''" @click="singleTask.done = !singleTask.done">
+                        {{singleTask.text}}
+                        <span class="remove" @click="removeTask(index)"><i class="fa-solid fa-xmark"></i></span>
+                    </li>
                 </ul>
             </div>
         </div>

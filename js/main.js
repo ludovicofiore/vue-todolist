@@ -52,6 +52,9 @@ createApp({
                 // pusho il nuovo oggetto
                 this.tasks.unshift(clonedTask);
 
+                console.log(clonedTask);
+
+
                 this.errorMessage = false;
             } else {
                 this.errorMessage = true;
@@ -63,7 +66,9 @@ createApp({
         // funzione per rimuovere task
         removeTask(index) {
             this.tasks.splice(index, 1);
-        }
+        },
+
+       
     }
 
 }).mount("#app");
